@@ -8,7 +8,7 @@
 
     <body>
         <div id="container">
-            <div class="scoreContainer" > <!--id="home"*/-->
+            <div class="scoreContainer">
                 <h1>HOME</h1>
                 <div class="scoreBoard" id="homeScore">
                     0
@@ -18,11 +18,23 @@
                     <button class="scoreBtn" id="home2">+2</button>
                     <button class="scoreBtn" id="home3">+3</button>
                 </div>
-                <!-- <div class="btnContainer">
-                    <button onclick="add(1, home)" class="scoreBtn plus1">+1</button>
-                    <button onclick="add(2, home)" class="scoreBtn plus2">+2</button>
-                    <button onclick="add(3, home)" class="scoreBtn plus3">+3</button>
-                </div> -->
+            </div>
+
+            <div id="timeContainer">
+                <h2 id="timerTitle">TIME</h2>
+                <div id="counter">
+                    <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>
+                </div>
+                <div>
+                    <button class="timeBtn" id="startBtn">Start</button>
+                    <button class="timeBtn" id="pauseBtn">Pause</button>
+                </div>
+                <div id="errorMsg">
+
+                </div>
+                <div>
+                    <button class="timeBtn" id="resetBtn">Reset</button>
+                </div>
             </div>
 
             <div class="scoreContainer" id="guest">
@@ -30,16 +42,11 @@
                 <div class="scoreBoard" id="guestScore">
                     0
                 </div>
-                <div class="btnContainer">
+                <div>
                     <button class="scoreBtn" id="guest1">+1</button>
                     <button class="scoreBtn" id="guest2">+2</button>
                     <button class="scoreBtn" id="guest3">+3</button>
                 </div>
-                <!-- <div class="btnContainer">
-                    <button onclick="add(1, guest)" class="scoreBtn plus1">+1</button>
-                    <button onclick="add(2, guest)" class="scoreBtn plus2">+2</button>
-                    <button onclick="add(3, guest)" class="scoreBtn plus3">+3</button>
-                </div> -->
             </div>
         </div>
 

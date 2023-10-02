@@ -1,13 +1,26 @@
-html{
+:root{
+    --bg-color: #1B244A;
+    --win-color: #10B981;
+    --loss-color: #F94F6D;
+    --button-color: #9AABD8;
+}
 
+@font-face {
+    font-family: CursedTimer; /*, sans-serif;*/
+    src: url(font/CursedTimerUlil-Aznm.ttf);
+}
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #container{
     display: flex;
     justify-content: space-around;
-    background-color: darkblue;
+    background-color: var(--bg-color);
     border-radius: 20px; 
-    width: 500px;
+    width: 600px;
+    height: 300px;
     color: white; 
     padding: 50px;
 }
@@ -15,38 +28,77 @@ html{
 .scoreContainer{
     display: flex; 
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-.scoreBoard{
-    width: 100px; 
-    height: 60px; 
-    padding: 20px; 
+h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+#timeContainer{
+    text-align: center;
+    margin: 80px 10px 0px 10px; 
+    padding: 10px;
+    width: 150px;
+}#timerTitle{
+    margin: 3px;
+    font-size: 20px;
+}#errorMsg{
+    height: 80px;
+    color: var(--loss-color);
+    font-size: 12px;
+    padding: 10px 0px; 
+}#resetBtn{
+    margin-top: 0px;
+    color: var(--button-color); 
+}.timeBtn{
+    background-color: var(--bg-color);
+    color: white; 
+    border: 1px solid var(--button-color); 
+    padding: 5px 8px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 12px;
+}#startBtn{
+    color: var(--win-color);
+}#pauseBtn{
+    color: var(--loss-color);
+}#counter{
+    font-size: 20px;
+    font-family: CursedTimer;
+    color: var(--button-color); 
     background-color: black;
-    color:brown; 
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center; 
-    margin-bottom: 20px;
-    /*center also vertically? */
+    padding: 7px 7px 3px 7px;
+    width: 100px;
+    margin: auto;
 }
 
-.btnContainer{
-    display:flex;
+.scoreBoard{
+    width: 135px; 
+    height: 80x; 
+    padding: 30px 40px 17px 20px; 
+    background-color: black;
+    color:var(--loss-color); 
+    font-size: 70px;
+    font-weight: bold;
+    text-align: right; 
+    overflow: contain; 
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-family: CursedTimer;
 }
 
 .scoreBtn{
-    background-color: darkblue;
-    border: 1px solid white; 
-    color: white; 
+    background-color: var(--bg-color);
+    border: 2px solid var(--button-color); 
+    color: var(--button-color); 
     width: 40px; 
     height: 40px; 
-    margin: 5px;
+    margin: 2px;
     border-radius: 5px;
+    font-size: 17px;
+    font-family: CursedTimer;
+    padding: 5px 4px 1px 4px; 
 }
-
-/* #home{
-}
-#guest{
-} */
