@@ -115,3 +115,4 @@ function reset(){
     guestScoreBoard.textContent = guestScore;
     determineLeader();
 }
+

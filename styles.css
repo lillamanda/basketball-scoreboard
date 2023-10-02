@@ -14,21 +14,29 @@ html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#bigContainer{
+    display:flex; 
+    flex-direction:column;
+    background-color: var(--bg-color);
+    
+    background: radial-gradient(580px at top left, #354176, var(--bg-color)); 
+    background-repeat: no-repeat; 
+
+    border-radius: 20px; 
+    width: 600px;
+    height: 325px;
+    color: white; 
+    padding: 50px 50px 0px 50px;
+}
 #container{
     display: flex;
     justify-content: space-around;
-    background-color: var(--bg-color);
-    border-radius: 20px; 
-    width: 600px;
-    height: 300px;
-    color: white; 
-    padding: 50px;
 }
 
 .scoreContainer{
     display: flex; 
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -39,14 +47,14 @@ h1{
 }
 #timeContainer{
     text-align: center;
-    margin: 80px 10px 0px 10px; 
+    margin: 60px 10px 0px 10px; 
     padding: 10px;
     width: 150px;
 }#timerTitle{
     margin: 3px;
     font-size: 20px;
 }#errorMsg{
-    height: 80px;
+    height: 60px;
     color: var(--loss-color);
     font-size: 12px;
     padding: 10px 0px; 
@@ -102,3 +110,16 @@ h1{
     font-family: CursedTimer;
     padding: 5px 4px 1px 4px; 
 }
+
+#logoContainer{
+    display:flex; 
+    justify-content: end;
+}
+#sablakreativ-svg{
+    fill: var(--bg-color);
+    width: 120px; 
+    margin-right: -20px;
+    margin-bottom: -10px;
+    filter: drop-shadow(1px 1px 1px rgb(154 171 216 / 0.5));
+} 
+
