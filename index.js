@@ -3,13 +3,13 @@
 // Indicate whether a game is started or not 
 let gameStarted = false;
 
-let errorMsg = document.getElementById("errorMsg");
+const errorMsg = document.getElementById("errorMsg");
 
 // Set scores
 let homeScore = 0; 
 let guestScore = 0;
-let homeScoreBoard = document.getElementById("homeScore");
-let guestScoreBoard = document.getElementById("guestScore");
+const homeScoreBoard = document.getElementById("homeScore");
+const guestScoreBoard = document.getElementById("guestScore");
 
 const button = document.getElementsByClassName("scoreBtn");
 
@@ -54,6 +54,10 @@ let hour = 0;
 let minute = 0; 
 let second = 0; 
 
+const hourEl = document.getElementById("hour").textContent = returnTime(hour);
+const minuteEl = document.getElementById("minute").textContent = returnTime(minute);
+const secondEl = document.getElementById("second").textContent = returnTime(second);
+
 let time; 
 
 document.getElementById("startBtn").addEventListener("click", function(){startGame();});
@@ -86,9 +90,9 @@ function timer(){
         minute = 0; 
         hour++; 
     }
-    document.getElementById("hour").textContent = returnTime(hour);
-    document.getElementById("minute").textContent = returnTime(minute);
-    document.getElementById("second").textContent = returnTime(second);
+    hourEl.textContent = returnTime(hour);
+    minuteEl.textContent = returnTime(minute);
+    secondEl.textContent = returnTime(second);
 }
 
 
@@ -105,9 +109,9 @@ function reset(){
     hour = 0;
     minute = 0; 
     second = 0; 
-    document.getElementById("hour").textContent = "00"; 
-    document.getElementById("minute").textContent = "00"; 
-    document.getElementById("second").textContent = "00"; 
+    hourEl.textContent = "00"; 
+    minuteEl.textContent = "00"; 
+    secondEl.textContent = "00"; 
 
     homeScore = 0;
     guestScore = 0;
