@@ -3,15 +3,15 @@
 // Indicate whether a game is started or not 
 let gameStarted = false;
 
-const errorMsg = document.getElementById("errorMsg");
+const errorMsg = document.getElementById("error-msg");
 
 // Set scores
 let homeScore = 0; 
 let guestScore = 0;
-const homeScoreBoard = document.getElementById("homeScore");
-const guestScoreBoard = document.getElementById("guestScore");
+const homeScoreBoard = document.getElementById("home-score");
+const guestScoreBoard = document.getElementById("guest-score");
 
-const button = document.getElementsByClassName("scoreBtn");
+const button = document.getElementsByClassName("score-btn");
 
 for(let i = 0; i<button.length; i++){
     button[i].addEventListener("click", function(e){
@@ -60,9 +60,9 @@ const secondEl = document.getElementById("second");
 
 let time; 
 
-document.getElementById("startBtn").addEventListener("click", function(){startGame();});
-document.getElementById("pauseBtn").addEventListener("click", function(){pause();});
-document.getElementById("resetBtn").addEventListener("click", function(){reset();});
+document.getElementById("start-btn").addEventListener("click", function(){startGame();});
+document.getElementById("pause-btn").addEventListener("click", function(){pause();});
+document.getElementById("reset-btn").addEventListener("click", function(){reset();});
 
 
 function startGame(){
