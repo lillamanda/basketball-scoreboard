@@ -54,9 +54,9 @@ let hour = 0;
 let minute = 0; 
 let second = 0; 
 
-const hourEl = document.getElementById("hour").textContent = returnTime(hour);
-const minuteEl = document.getElementById("minute").textContent = returnTime(minute);
-const secondEl = document.getElementById("second").textContent = returnTime(second);
+const hourEl = document.getElementById("hour");
+const minuteEl = document.getElementById("minute");
+const secondEl = document.getElementById("second");
 
 let time; 
 
